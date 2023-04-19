@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'SF Compact Rounded';
+    font-weight: 300;
+    src: url(./SF-Compact-Rounded-Light.otf);
+}
+
+@font-face {
+    font-family: 'SF Compact Rounded';
+    font-weight: 400;
+    src: url(./SF-Compact-Rounded-Regular.otf);
+}
+
+@font-face {
+    font-family: 'SF Compact Rounded';
+    font-weight: 500;
+    src: url(./SF-Compact-Rounded-Medium.otf);
+}
+
+@font-face {
+    font-family: 'SF Compact Rounded';
+    font-weight: 600;
+    src: url(./SF-Compact-Rounded-Semibold.otf);
+}
+
+@font-face {
+  font-family: 'Candyshop';
+  src: url(./Candyshop.otf);
+  font-display: swap;
+}
+
+:root {
+  --theme-color: #ff9800;
+  --font-fans: 'SF Compact Rounded','PingFang SC','Microsoft YaHei',Lato,sans-serif;
+  --header-height: max(50vh, 400px);
+  --banner-bg-color: #fff;
+  cursor: url(./cursor.png), default;
+}
+
+/* header overall */
+
+.xlog-banner img {
+    width: auto !important;
+}
+
+.xlog-site-name {
+    color: var(--theme-color);
+    font-family: Candyshop;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, -1.414px 0 0 #fff, 1.414px 0 0 #fff, 0 -1.414px 0 #fff, 0 1.414px 0 #fff;
+    font-size: 35px;
+}
+
+.xlog-site-info {
+    border: 1px solid #fff;
+    transition: .3s ease;
+}
+
+.dark .xlog-site-info {
+  border: 1px solid var(--border-color);;
+}
+
+.xlog-site-icon {
+    width: 110px;
+    height: 110px;
+}
+
+@media (max-width: 640px) {
+    .xlog-site-info {
+        padding: 1rem;
+    }
+}
+
+/* post list */
+
+.xlog-post {
+    transition: .3s ease;
+}
+
+@media (min-width: 640px) {
+    .xlog-post:hover {
+        transform: scale(1.02);
+        box-shadow: rgb(0 0 0 / 10%) 0 10px 50px;
+        background-color: #fff;
+    }
+
+    .dark .xlog-post:hover {
+        background-color: var(--hover-color);
+    }
+
+    .xlog-site-info:hover {
+        transform: scale(1.03);
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    margin-top: 210px;
+}
+
+footer:before {
+    content: ' ';
+    background: url(./footer.png) no-repeat center;
+    height: 368px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -295px;
+    left: 0;
+    pointer-events: none;
+}
+
+/* nft */
+
+.xlog-nft[data-collection="0x0251af933d0ace03f817a37613bf5f0a437021e1"],
+.xlog-nft[data-collection="0x5e35676c32256afd980752d2a4c79d7eb0cddb95"],
+.xlog-nft[data-collection="0x20ddb61d73ae20ce773484ee6d1abbaa8d546d55"],
+.xlog-nft[data-collection="0x00ca6a067a566b6e591fbf2ca738ac96f3d387f1"],
+.xlog-nft[data-collection="0x1aa56ac6f909aff9507878aacbcc2e1e47474a91"],
+.xlog-nft[data-collection="0x2953399124f0cbb46d2cbacd8a89cf0599974963"],
+.xlog-nft[data-collection="0x082b3c57349ec9d03ee757d505feaeab46a49df3"],
+.xlog-nft[data-collection="0x28cd0944ba6f2b555f9397ddf8b291041a20ce67"],
+.xlog-nft[data-collection="0x4143e7c0396185a1853f6bbd346f9224a8175679"],
+.xlog-nft[data-collection="0x3d73ca1c66c201af81f417c03690d0619f817e5d"],
+.xlog-nft[data-collection="0x446177d245ab377cfa057984cf3b3f0010f5735f"],
+.xlog-nft[data-collection="0x2cc75473fe36f1b9e543de2b08861aed983901e6"],
+.xlog-nft[data-collection="0x2a79a3b7284deaa4c0c400e70414fad439739935"],
+.xlog-nft[data-collection="0xe597a63e7f6906329cb151f9ac497ea9b1ff344a"],
+.xlog-nft[data-collection="0xb6782b1ebc3b8bb597bf57df618668846dfb1966"],
+.xlog-nft[data-collection="0x93fdfb08ba1defa3b7dbd2f3d0cfbf29234db7d5"],
+.xlog-nft[data-collection="0x4df1b64dd7e7a0ba9f8319c9e18371a6425b1e70"],
+.xlog-nft[data-collection="0x91501ad5b658a28175c3e95ce3f85c382699fca8"],
+.xlog-nft[data-collection="0x6a532e953eb9eaa2161e3c26b6c5fe40e3dc4862"],
+.xlog-nft[data-collection="0x9b8d02a3af7a2ddad3272e3ca1e8dd89c6a98aa5"],
+.xlog-nft[data-collection="0x4f117881cedaa928e71c7f33d07859286f9b86da"],
+.xlog-nft[data-collection="0xd9438c0afd3f69684a3c8cec7b695fd3dbeacc25"],
+.xlog-nft[data-collection="0xa83c2d2c3df16c4c1bf12c04b50f6236947707bf"],
+.xlog-nft[data-collection="0x67ca4a709fe4d07f0f889ec8c0ab8795016650d0"],
+.xlog-nft[data-collection="0x4d4f289735c24e0e68b33d89ea5b58d191519a27"],
+.xlog-nft[data-collection="0xdbbf84b53099fd51bc05d3d5e93cf59b1f25db2c"],
+.xlog-nft[data-collection="0xba612b53fd5f214900c92266991d098a6f788a2b"],
+.xlog-nft[data-collection="0xd221e8935dd139554a137b2363e0cfbf5537f2f3"],
+.xlog-nft[data-collection="0x8f95285f89d72d94c64b2a1d4257e15da0275acc"],
+.xlog-nft[data-collection="0xd7a4fffaf4965d5d8db72925a8f1fd6e4add293a"],
+.xlog-nft[data-collection="0xefee8511555d87e9350a345d7ea050213bec8002"],
+.xlog-nft[data-collection="0x7319f53ca908b43ee87fce7e3cce75cdfe2169ea"],
+.xlog-nft[data-collection="0x5bc9c90be23af74db084934c683d80f722e074d9"],
+.xlog-nft[data-collection="0x6470f8d1fb3c757e878a7ab8231cf45d0d752fa5"],
+.xlog-nft[data-collection="0x4de0881ca95106a3fa01007cd2e4fe773fc8ac99"],
+.xlog-nft[data-collection="0xdd7ca892be51d5ece23ac2467441cfa42c76aa03"],
+.xlog-nft[data-collection="0xeafea495a5cbcff9ec6f569de49b073283d0b18a"],
+.xlog-nft[data-collection="0xd47eb1c2f8105b8d0d50487614934ccc309ae41f"],
+.xlog-nft[data-collection="0xf5f941cccf571a8bddd4420af269427394aed8fe"],
+.xlog-nft[data-collection="0x2dfeb752222cccecb9bc0a934b02c3a86f633900"],
+.xlog-nft[data-collection="0xdb49b8e3aa2f7d44e69d70e9b71db1045e2b9bfd"],
+.xlog-nft[data-collection="0xad47d554e3a527d5cb4712b79eabba4f6152abcd"],
+.xlog-nft[data-collection="0x17636a4a64317e4e36945f4a94ea2c45efe2ddfc"],
+.xlog-nft[data-collection="0x859d71b2fa70909b097a9b296ebc1dee29be15c1"],
+.xlog-nft[data-collection="0xa012b3e2815f4485b998f4ee72cf14ac9226fddf"],
+.xlog-nft[data-collection="0xe087169656720cf9d66afa778fe995d378d571f0"] {
+    display: none;
+}
+
+.xlog-nft[data-collection="0x2953399124f0cbb46d2cbacd8a89cf0599974963"][data-name^="CryptoArt "],
+.xlog-nft[data-collection="0x2953399124f0cbb46d2cbacd8a89cf0599974963"][data-name^="MCG"],
+.xlog-nft[data-collection="0x2953399124f0cbb46d2cbacd8a89cf0599974963"][data-name="Yellow Card"],
+.xlog-nft[data-collection="0x2953399124f0cbb46d2cbacd8a89cf0599974963"][data-name="Your First NFT"] {
+    display: flex;
+}
