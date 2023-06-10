@@ -38,6 +38,10 @@
 
 /* header overall */
 
+.dark .xlog-banner {
+    filter: brightness(40%);
+}
+
 .xlog-banner img {
     width: auto !important;
 }
@@ -58,11 +62,6 @@
   border: 1px solid var(--border-color);;
 }
 
-.xlog-site-icon {
-    width: 110px;
-    height: 110px;
-}
-
 @media (max-width: 640px) {
     .xlog-site-info {
         padding: 1rem;
@@ -77,9 +76,9 @@
 
 @media (min-width: 640px) {
     .xlog-post:hover {
-        transform: scale(1.02);
         box-shadow: rgb(0 0 0 / 10%) 0 10px 50px;
-        background-color: #fff;
+        z-index: 1;
+        position: relative;
     }
 
     .dark .xlog-post:hover {
@@ -158,7 +157,8 @@ footer:before {
 .xlog-nft[data-collection="0x17636a4a64317e4e36945f4a94ea2c45efe2ddfc"],
 .xlog-nft[data-collection="0x859d71b2fa70909b097a9b296ebc1dee29be15c1"],
 .xlog-nft[data-collection="0xa012b3e2815f4485b998f4ee72cf14ac9226fddf"],
-.xlog-nft[data-collection="0xe087169656720cf9d66afa778fe995d378d571f0"] {
+.xlog-nft[data-collection="0xe087169656720cf9d66afa778fe995d378d571f0"],
+.xlog-nft[data-collection="0x72553f7cd56bbd4239e2df2eb9cedcd3c0199375"] {
     display: none;
 }
 
