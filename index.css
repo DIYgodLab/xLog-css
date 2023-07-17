@@ -2,70 +2,34 @@
     font-family: 'SF Compact Rounded';
     font-weight: 300;
     src: url(./SF-Compact-Rounded-Light.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'SF Compact Rounded';
     font-weight: 400;
     src: url(./SF-Compact-Rounded-Regular.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'SF Compact Rounded';
     font-weight: 500;
     src: url(./SF-Compact-Rounded-Medium.otf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'SF Compact Rounded';
     font-weight: 600;
     src: url(./SF-Compact-Rounded-Semibold.otf);
+    font-display: swap;
 }
 
 @font-face {
   font-family: 'Candyshop';
   src: url(./Candyshop.otf);
   font-display: swap;
-}
-
-:root {
-  --theme-color: #ff9800;
-  --font-fans: 'SF Compact Rounded','PingFang SC','Microsoft YaHei',Lato,sans-serif;
-  --header-height: max(50vh, 400px);
-  --banner-bg-color: #fff;
-  cursor: url(./cursor.png), default;
-}
-
-/* header overall */
-
-.dark .xlog-banner {
-    filter: brightness(40%);
-}
-
-.xlog-banner img {
-    width: auto !important;
-}
-
-.xlog-site-name {
-    color: var(--theme-color);
-    font-family: Candyshop;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, -1.414px 0 0 #fff, 1.414px 0 0 #fff, 0 -1.414px 0 #fff, 0 1.414px 0 #fff;
-    font-size: 35px;
-}
-
-.xlog-site-info {
-    border: 1px solid #fff;
-    transition: .3s ease;
-}
-
-.dark .xlog-site-info {
-  border: 1px solid var(--border-color);;
-}
-
-@media (max-width: 640px) {
-    .xlog-site-info {
-        padding: 1rem;
-    }
 }
 
 /* post list */
