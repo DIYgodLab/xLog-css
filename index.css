@@ -26,12 +26,6 @@
     font-display: swap;
 }
 
-@font-face {
-  font-family: 'Candyshop';
-  src: url(./Candyshop.otf);
-  font-display: swap;
-}
-
 /* post list */
 
 .xlog-post {
