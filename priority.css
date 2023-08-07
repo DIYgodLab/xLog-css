@@ -1,5 +1,4 @@
 @import url('./lazy.css');
-@import url('https://fastly.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.min.css');
 
 @font-face {
   font-family: 'Candyshop';
@@ -9,8 +8,8 @@
 
 :root {
   --theme-color: #ff9800;
-  --font-fans: 'LXGW WenKai Screen','PingFang SC','Microsoft YaHei',Lato,sans-serif;
-  --header-height: max(50vh, 400px);
+  --font-fans: 'SF Compact Rounded','PingFang SC','Microsoft YaHei',Lato,sans-serif;
+  /* --header-height: max(50vh, 400px); */
   --banner-bg-color: #fff;
   cursor: url('./cursor.png'), default;
 }
