@@ -45,3 +45,32 @@
         padding: 1rem;
     }
 }
+
+.xlog-site-description {
+  color: #97dffd;
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+.xlog-fab {
+  bottom: unset;
+  top: 0;
+}
+
+.xlog-back-to-top {
+    background: url('./scroll.png') center/cover;
+    width: 70px;
+    height: 900px;
+    margin-top: 0;
+    opacity: 1;
+    border: none;
+    right: 50px;
+}
+
+.xlog-back-to-top.xlog-fab-inactive {
+    transform: translate(0, -900px);
+    display: block;
+}
+
+.xlog-back-to-top i {
+  display: none;
+}

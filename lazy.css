@@ -30,7 +30,7 @@ footer {
 
 footer:before {
     content: ' ';
-    background: url(./footer.png) no-repeat center;
+    background: url(./footer.png) center/contain no-repeat;
     height: 368px;
     width: 100%;
     display: block;
