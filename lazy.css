@@ -1,20 +1,6 @@
-/* post list */
-
-.xlog-post {
-    transition: .3s ease;
-}
+/* header */
 
 @media (min-width: 640px) {
-    .xlog-post:hover {
-        box-shadow: rgb(0 0 0 / 10%) 0 10px 50px;
-        z-index: 1;
-        position: relative;
-    }
-
-    .dark .xlog-post:hover {
-        background-color: var(--hover-color);
-    }
-
     .xlog-site-info:hover {
         transform: scale(1.03);
         -webkit-font-smoothing: antialiased;
